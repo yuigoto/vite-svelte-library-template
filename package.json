@@ -1,0 +1,52 @@
+{
+  "name": "vite-svelte-library-template",
+  "version": "0.0.1",
+  "description": "Place your description here",
+  "author": "Fabio Y. Goto <lab@yuiti.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuigoto/vite-svelte-library-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuigoto/vite-svelte-library-template/issues"
+  },
+  "homepage": "https://github.com/yuigoto/vite-svelte-library-template/tree/main#readme",
+  "keywords": [
+    "svelte",
+    "javascript",
+    "typescript"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "default": "./dist/index.es.js"
+    }
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@tsconfig/svelte": "^2.0.1",
+    "prettier": "^2.6.1",
+    "sass": "^1.49.9",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.7",
+    "svelte-preprocess": "^4.9.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
